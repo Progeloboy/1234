@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+PATIENT INFORMATION
+</title>
+</head>
+PATIENT INFORMATION SHEET
+
+<form>
+<body>
+
+<br>
+Last name: <br> <input type="text" name="name">
+<br>
+First name: <br> <input type="text">
+<br>
+Middle name: <br> <input type="text">
+<br> 
+Birthdate: <br> <input type="date">
+<br>
+Birthplace: <br> <input type="text">
+<br>
+<select name="Civil-Status" id="Civil status">
+    <option value="">Civil Status</option>
+    <option value="Single">Single</option>
+    <option value="Married">Married</option>
+    <option value="Widowed">Widowed</option>
+    <option value="Separated">Separated</option>
+    <option value="Divorced">Divorced</option>
+</select>
+<br>
+Address: <br> <input type="text">
+<br>
+Email: <br><input type="text">
+<br>
+Tel/Mobile No. <br><input type="text">
+<br>
+Religion: <br><input type="text">
+<br>
+Occupation: <br><input type="text">
+
+<br>
+Gender:<br>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="Prefer not to say"> Prefer not to say
+
+<br>
+<br>
+
+<input type="submit">
+
+
+
+</form>
+
+<?php
+
+if($POST)
+{
+$name=$_POST['name'];
+?>
+
+
+</body>
+</html>
+
+<?php
+}
+?>
